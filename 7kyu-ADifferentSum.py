@@ -11,5 +11,11 @@
 # (-1, 2) --> 2 (-1 + 0 + 1 + 2 = 2)
 # Your function should only return a number, not the explanation about how you get that number.
 
-def get_sum(a, b): 
-    return a if a == b else a + b
+def get_sum(a, b):
+    if a == b:
+        return a
+    if a > b:
+        a, b = b, a
+
+    return sum(range(a, b+1))
+
