@@ -3,10 +3,11 @@
 # Note: input will never be an empty string
 
 def fake_bin(x):
-    x = list(x)
-    for i in range(len(x)):
-        if x[i] < '5':
-            x[i] = '0'
+    result = ''
+    for char in x:
+        if char < '5':
+            result += '0'
         else:
-            x[i] = '1'
-    return ''.join(x)
+            result += '1'
+    return result
+
