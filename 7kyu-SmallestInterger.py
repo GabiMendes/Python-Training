@@ -8,4 +8,8 @@
 
 def find_smallest_int(arr):
     seq = [int(x) for x in arr]
-    return min(seq)
+    smallest = seq[0]
+    for num in seq:
+        if num < smallest:
+            smallest = num
+    return smallest
