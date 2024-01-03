@@ -7,9 +7,5 @@
 # You can assume, for the purpose of this kata, that the supplied array will not be empty.
 
 def find_smallest_int(arr):
-    seq = [int(x) for x in arr]
-    smallest = seq[0]
-    for num in seq:
-        if num < smallest:
-            smallest = num
+    smallest = min(arr)
     return smallest
